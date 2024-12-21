@@ -4,11 +4,12 @@
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+    padding-top: 30px;
 }
 
 input.input {
-    width: 300px;
-    height: 26px;
+    width: 321px;
+    height: 45px !important;
     margin-top: 10px;
     border-radius: 8px;
     border: 0;
@@ -29,11 +30,37 @@ select.select-fe {
 }
 
 button.button-submit {
-    width: 325px;
+    width: 321px;
     height: 45px;
     border: 0;
     border-radius: 8px;
     margin-top: 10px;
     color: #ffff;
     background: green;
+}
+
+.alert_custom{
+    width: 325px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    padding: 0px !important;
+    padding-top : 10px !important;
+}
+.ads{
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+}
+
+.button-end-link{
+
+        margin-top: 30px;
+        height: 45px;
+        border: 0px;
+        background: green;
+        color: #fff;
+        border-radius: 8px;
+        padding: 11px;
 }
