@@ -1,3 +1,12 @@
+<?php
+require_once ('./config/loader.php');
+
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +26,7 @@
             <input class="input" type="text" placeholder="add your link">
             <br>
             
-            <input class="input" type="text" placeholder="https://localhost/arias">
+            <input class="input" type="text" value="https://localhst/app2">
             <br>
             <select class="select-fe" name="" id="">
                 <option value="">directly</option>
@@ -36,3 +45,22 @@
 
 </body>
 </html>
+
+<?php
+//get url
+//
+// get shorted link
+// shorted link  is in database url
+
+// shorted link  in database = true   alert = url is not use
+
+//shorted link  in database = false
+//
+//save link and show shortlink in page
+//
+//
+
+
+
+
+?>
