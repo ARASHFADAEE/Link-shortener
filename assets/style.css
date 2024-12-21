@@ -1,0 +1,39 @@
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+input.input {
+    width: 300px;
+    height: 26px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 0;
+    background: whitesmoke;
+    padding: 10px;
+}
+
+select.select-fe {
+    width: 321px;
+    margin-top: 10px;
+    height: 45px;
+    border: 0;
+    background: #f5f5f5;
+    border-radius: 8px;
+    color: darkslategrey;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+button.button-submit {
+    width: 325px;
+    height: 45px;
+    border: 0;
+    border-radius: 8px;
+    margin-top: 10px;
+    color: #ffff;
+    background: green;
+}
