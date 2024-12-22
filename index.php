@@ -10,6 +10,7 @@ if(isset($_POST['submit'])){
         //get urls
         $custom_link=$_POST['custom_link'];
         $end_link=$_POST['end_link'];
+        $type=$_POST['type_link'];
 
         //Verification of sent requests
         if(isset($custom_link) && isset($end_link)){
@@ -34,12 +35,14 @@ if(isset($_POST['submit'])){
             }else{
 
 
-                $query2=" INSERT INTO LINKS SET custom_link=?, end_link=?";
+                $query2=" INSERT INTO LINKS SET custom_link=?, end_link=? ,type=?";
 
                 $stmt2=$conn->prepare($query2);
 
                 $stmt2->bindValue(1,$custom_link);
                 $stmt2->bindValue(2,$end_link);
+                $stmt2->bindValue(3,$type);
+
 
                 $stmt2->execute();
 
@@ -79,7 +82,13 @@ if(isset($_GET['url'])){
         $stmt3->execute();
         $has_custom_link=$stmt3->rowCount();
         $end_link_url=$stmt3->fetch(PDO::FETCH_ASSOC);
+        $has_type=$end_link_url['type'];
         $end_link_url_show=$end_link_url['end_link'];
+
+        if($has_type=='directly'){
+
+            header('location:'.$end_link_url_show);
+        }
 
 
 
@@ -115,9 +124,9 @@ if(isset($_GET['url'])){
             
             <input name="custom_link" class="input" type="text" value="http://localhost/php/Link-shortener?url=">
             <br>
-            <select name class="select-fe" name="" id="">
-                <option value="">directly</option>
-                <option value="">indirect</option>
+            <select name="type_link" class="select-fe" name="" id="">
+                <option value="directly">directly</option>
+                <option value="indirect">indirect</option>
 
             </select>
             <br>
