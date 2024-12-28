@@ -64,3 +64,14 @@ button.button-submit {
         border-radius: 8px;
         padding: 11px;
 }
+
+.button-subscription{
+
+    margin-top: 30px;
+    height: 45px;
+    border: 0px;
+    background: dodgerblue;
+    color: #fff;
+    border-radius: 8px;
+    padding: 11px;
+}

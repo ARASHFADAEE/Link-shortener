@@ -172,6 +172,29 @@ if(isset($_GET['url'])){
         </div>
 
     <?php }?>
+    <div class="container" style="width: 350px ;">
+        <p class="alert alert-info">Buy a subscription to display the link without ads:</p>
+        <form method="post" action="./class/payment.php" >
+            <label >
+                7-day subscription(20,000 toman)
+            </label>
+            <input name="vip" type="radio" value="7">
+            <br>
+            <label >
+                15-day subscription(30,000 toman)
+            </label>
+            <input name="vip" type="radio" value="15">
+            <br>
+            <label >
+                30-day subscription(60,000 toman)
+            </label>
+            <input name="vip" type="radio" value="30">
+            <br>
+
+            <button class="button-subscription" type="submit" name="submitvip">Buy subscription</button>
+
+        </form>
+    </div>
 </div>
 
 </body>
